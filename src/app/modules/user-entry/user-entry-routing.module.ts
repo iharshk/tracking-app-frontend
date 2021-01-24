@@ -23,7 +23,6 @@ const routes: Routes = [
         path: 'signup',
         data: { title: "Signup" },
         component: SignupComponent,
-        // canActivate: [RouteStateGuard]
       }
     ]
   }

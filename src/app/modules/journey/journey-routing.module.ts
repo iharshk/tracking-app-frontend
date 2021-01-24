@@ -17,6 +17,7 @@ const routes: Routes = [
         path: 'location',
         data: { title: "Location" },
         component: LocationComponent,
+        // canActivate: [RouteStateGuard]
       }
     ]
   }
