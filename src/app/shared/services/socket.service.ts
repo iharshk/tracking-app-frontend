@@ -14,7 +14,7 @@ export  class SocketService implements OnInit {
 
    ngOnInit(){
 
-    // this.socketconnect();
+    this.socketconnect();
     // this.getLocation( );
    }
 
