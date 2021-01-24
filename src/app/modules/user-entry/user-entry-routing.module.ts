@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { UserEntryComponent } from './user-entry.component';
@@ -23,7 +23,6 @@ const routes: Routes = [
         path: 'signup',
         data: { title: "Signup" },
         component: SignupComponent,
-        // canActivate: [RouteStateGuard]
       }
     ]
   }
@@ -31,7 +30,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [],
-  // schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  exports: [RouterModule]
 })
 export class UserEntryRoutingModule { }
