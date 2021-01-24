@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from 'src/app/shared/services/request.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _request: RequestService
+  ) { }
 
   ngOnInit(): void {
+    this.getFormFields();
+  }
+
+  getFormFields() {
+    // this._request.get(environment.backendUrl)
   }
 
 }
