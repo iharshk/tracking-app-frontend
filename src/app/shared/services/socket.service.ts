@@ -27,8 +27,8 @@ export  class SocketService implements OnInit {
     }
 
     showPosition(position) {
-      this.abc.innerHTML = "Latitude: " + position.coords.latitude +
-      "<br>Longitude: " + position.coords.longitude;
+      // this.x.innerHTML = "Latitude: " + position.coords.latitude +
+      // "<br>Longitude: " + position.coords.longitude;
     }
 
   socketconnect() {
