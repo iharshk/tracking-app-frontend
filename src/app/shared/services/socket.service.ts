@@ -7,14 +7,14 @@ import {​​​​​​​​ environment }​​​​​​​​ from'../.
 })
 export  class SocketService implements OnInit {
 
-  private socket: SocketIOClient.Socket;
+  // private socket: SocketIOClient.Socket;
 
   constructor() {
    }
 
    ngOnInit(){
 
-    this.socketconnect();
+    // this.socketconnect();
     // this.getLocation( );
    }
 
@@ -32,8 +32,8 @@ export  class SocketService implements OnInit {
     }
 
   socketconnect() {
-    this.socket = io.connect(environment.backendUrl);
-    this.socket.emit('userconnect', {​​​​​​​​ user_id: "harsh", action:'socket connection' }​​​​​​​​);
+    // this.socket = io.connect(environment.backendUrl);
+    // this.socket.emit('userconnect', {​​​​​​​​ user_id: "harsh", action:'socket connection' }​​​​​​​​);
 
   }
 }

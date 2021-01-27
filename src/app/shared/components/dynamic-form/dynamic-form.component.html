@@ -1,1 +1,19 @@
-<p>dynamic-form works!</p>
+
+<div [formGroup]="group" class="row">
+    <ng-container>
+        <div *ngFor="let row of resultConfig | keyvalue : returnZero"
+            class="{{row.value.config.bootClass!==undefined ? row.value.config.bootClass : ''}} w-100">
+            <div *ngIf="row.key != 'accordian'"
+                class="{{row.value.config.rowClass!==undefined ? row.value.config.rowClass : ''}} w-100">
+                <div *ngFor="let field of row.value.fields | keyvalue : returnZero"
+                    class="{{row.value.config.parentClass!==undefined ? row.value.config.parentClass : ''}} col-12">
+                    <div [labelVissble]="labelVissble" [group]="group" [field]="field.value"
+                        [ngClass]="setClass('list',field.value.name)"  [parentGroup]="parentGroup"
+                        appDynamicField>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

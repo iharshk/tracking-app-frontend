@@ -13,7 +13,7 @@ export class LocationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.socketCon();
+    // this.socketCon();
     // this.x = document.getElementById("demo");
     // this.getLocation()
   }
