@@ -22,4 +22,5 @@ export interface FieldConfig {
     otp1: string;
     isMultilines?: any;
     btnClass?:any;
+    placeholder?:string;
 }

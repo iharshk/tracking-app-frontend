@@ -1,0 +1,44 @@
+{
+    "SignupComponent": {
+        "0":{
+            "fields":{
+              "0": "full_name"
+            },
+            "config":{
+              "bootClass": "custom-col-md-12"
+            }
+        },
+        "1":{
+            "fields":{
+              "0": "mobile_number"
+            },
+            "config":{
+              "bootClass": "custom-col-md-12"
+            }
+        },
+        "2":{
+            "fields":{
+              "0": "email_address"
+            },
+            "config":{
+              "bootClass": "custom-col-md-12"
+            }
+        },
+        "3":{
+            "fields":{
+              "0": "password"
+            },
+            "config":{
+              "bootClass": "custom-col-md-12"
+            }
+        },
+        "4":{
+            "fields":{
+              "0": "confirm_password"
+            },
+            "config":{
+              "bootClass": "custom-col-md-12"
+            }
+        }
+    }
+}

@@ -1,1 +1,12 @@
-<p>input works!</p>
+<ng-container [formGroup]="group">
+    <input class="text top-bottom-margin" 
+    [type]="field.inputType" 
+    [name]="field.name" 
+    [placeholder]="field.placeholder"
+    [formControlName]="field.name"
+    required="">
+</ng-container>
+
+
+
+
