@@ -1,31 +1,14 @@
 <div class="main-w3layouts wrapper">
     <div class="main-agileinfo">
-        <div class="agileits-top">
-            <form action="#" method="post">
-                <input class="text" type="text" name="Username" placeholder="Username" required="">
-                <input class="text email" type="email" name="email" placeholder="Email" required="">
-                <input class="text" type="password" name="password" placeholder="Password" required="">
-                <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
-                <input type="submit" value="SIGNUP">
-            </form>
+        <div class="agileits-top"  *ngIf="signupConfig.length > 0 && signupForm">
 
-            <form [formGroup]="signupForm" *ngIf="signupConfig.length > 0 && signupForm">
+            <form [formGroup]="signupForm">
                 <div class="mt-20">
                    <app-dynamic-form [fields]="signupConfig" [group]="signupForm" [labelVissble]="'1'"
                    [parentComponent]="'SignupComponent'"></app-dynamic-form>
-             
                 </div>
-                 <!-- <div class="row">
-                    <div class="custom-col-md-12 text-right mt-30 ">
-                       <div class="">
-                          <button aria-label="continue"
-                             class="btn btn-primary ml-md-4 w-100 w-md-auto ml-0 mt-20 mt-md-0"
-                                 >Continue</button>
-                       </div>
-                    </div>
-                 </div> -->
             </form>
-
+            <button class="btn-submit" type="submit" (click)="onSubmit()">Signup</button>
 
             <p>Don't have an Account? <a href="user/login"> Login Now!</a></p>
         </div>

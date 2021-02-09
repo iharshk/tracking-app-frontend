@@ -52,7 +52,6 @@ export class DynamicFormComponent implements OnInit {
 
        
         Object.entries(formfields).forEach(field => {
-          console.log(field, typeof field[1]);
           if (typeof field[1] !== 'string') {
             Object.entries(field[1]['fields']).forEach(field1 => {
               this.getFieldResponseConfig(entry, field1, field[0]);

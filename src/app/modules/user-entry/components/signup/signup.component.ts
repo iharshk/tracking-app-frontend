@@ -35,4 +35,8 @@ export class SignupComponent implements OnInit {
     })
   }
 
+  onSubmit () {
+    console.log('hhgffdd')
+  }
+
 }
